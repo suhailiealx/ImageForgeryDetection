@@ -21,45 +21,45 @@ Semua requirements dapat diinstall dengan menjalan perintah berikut di bash:
 ## Fungsi-Fungsi
 ### 1. Analisis Metadata
 ```
-python foreimg.py cloning.jpg
+python forensic.py cloning.jpg
 ```
 atau:
 ```
-python foreimg.py -e cloning.jpg
+python forensic.py -e cloning.jpg
 ```
 
 
 ### 2. JPEG Ghost
 ```
-python foreimg.py -g cloning.jpg
+python forensic.py -g cloning.jpg
 ```
 
 Untuk menggunakan serangkaian nilai kualitas:
 
 ```
-python foreimg.py -gm cloning.jpg
+python forensic.py -gm cloning.jpg
 ```
 
 Daerah hasil manipulasi biasanya akan ditandai dengan border terang atau ditandai dengan daerah yang lebih gelap.
 
 NB: Nilai kualitas penyimpanan gambar dapat diatur dengan perintah:
 ```
-python foreimg.py -g -q 50 demo.jpg
+python forensic.py -g -q 50 demo.jpg
 ```
 
 ### 3. Noise Inconsistencies
 ```
-python foreimg.py -n cloning.jpg
+python forensic.py -n cloning.jpg
 ```
 Daerah hasil manipulasi biasanya akan ditandai dengan border terang atau ditandai dengan daerah yang lebih gelap.
 
 Untuk menjalankan dengan fitur median-filter, jalankan:
 ```
-python foreimg.py -mn cloning.jpg
+python forensic.py -mn cloning.jpg
 ```
 
 ### 4. Error Level Analysis
 ```
-python foreimg.py -el demo.jpg
+python forensic.py -el cloning.jpg
 ```
 Daerah hasil manipulasi biasanya akan ditandai dengan border terang atau ditandai dengan daerah yang lebih gelap.
